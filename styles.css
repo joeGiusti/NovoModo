@@ -68,13 +68,28 @@ html, body{
 .infoSection{
     width: 100%;
     min-height: 200px;
+    background-color: #F3F3F4;
 }
 .card{
+    background-color: white;
     min-height: 300px;
     width: 29%;
-    border-radius: 2px;
+    border-radius: 5px;
     border: 1px solid lightgray;    
     display: inline-block;
+    margin-left:3%; 
+    margin-top: 20px;
+    vertical-align: bottom;
+    overflow: hidden;
+    text-align: center;
+    font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+}
+.card2{
+    font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+    background-color: white;
+    min-height: 300px;
+    width: 29%;
+    border-radius: 5px;
     margin-left:3%; 
     margin-top: 20px;
     vertical-align: bottom;
@@ -102,7 +117,7 @@ html, body{
     background-color: tomato;    
 }
 .cardTextArea{
-    margin: 10px;
+    margin: 10px;    
 }
 .cardTitle{
     font-size: 30px;
