@@ -67,8 +67,30 @@ html, body{
 /* Info Sections */
 .infoSection{
     width: 100%;
+    min-height: 300px;
+    background-color: white;
+}
+.infoBox{
+    margin: 50px;
+    margin-left: 3%;
+    
+}
+.infoTitle{
+    font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.infoText{
+    font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+.cardsSection{
+    width: 100%;
     min-height: 200px;
     background-color: #F3F3F4;
+    display: inline-block;
+    vertical-align: bottom;
+    padding-bottom: 30px;
 }
 .card{
     background-color: white;
