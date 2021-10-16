@@ -83,6 +83,13 @@ html, body{
 /* Info Sections */
 .infoSection{
     min-height: 300px;
+    background-color: white; 
+    padding-top: 10px;
+    padding-bottom: 10px;   
+}
+.infoSectionInner{
+    border-radius: 5px;
+    margin: 10px;
     background-color: white;
 }
 .infoBox{
@@ -91,6 +98,7 @@ html, body{
     text-align: center;
     font-family: "Patron", "Open Sans", Helvetica, Arial, sans-serif;
     margin-bottom: 20px;
+    background-image: url('C:\Users\broski\Downloads\3711_computerscience-banner-final2.jpg');
 }
 .infoBoxPartial{
     margin-top: 30px;
@@ -102,12 +110,12 @@ html, body{
     display: inline-block;
 }
 .infoTitle{    
-    font-size: 45px;
+    font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 .infoText{    
-    font-size: 25px;
+    font-size: 18px;
     width: 80%;
     margin-left: 10%;
 }
@@ -116,7 +124,8 @@ html, body{
     width: 300px;     
     display: inline-block;
     margin-left: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     vertical-align: top;
 }
 .infoButton{
@@ -140,6 +149,7 @@ html, body{
 .infoButton:hover{      
     background-color: #1e328b;
     color: white;
+    border: 1px solid #000028; 
 }
 .cardsSection{
     width: 100%;
