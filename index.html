@@ -1,70 +1,95 @@
-<html>
-    <!-- 
-        tasks to outsource
-          responsive banner
-          images in cards
-          
-          for the card text: 
-          https://www.mendix.com/
-
-            I have created part of a website and there are a few tasks left to finish it. 
-            I have listed the tasks below as well as a link to the github repo and some examples sites. 
-            If you could send me a quote on how much time/money this will take I would appreciate it. 
-            Thank you.
-
-            Github repo link
-            https://github.com/joeGiusti/NovoModo
-
-            Example sites
-            1) https://www.sw.siemens.com/en-US/
-            2) https://www.mendix.com/
-
-            1) 
-            Adding the video banner at the top with the proper scaling. I think its a plugin called hero but you can use whatever you think is best. 
-            You can use e1 (example site 1) as a reference to what I mean.
-
-            2)
-            Making the cards look like the cards on e2 (example site #2 above)
-            also an alternate card styling from e1 also
-
-            3)
-            Formatting bottom info section with links like very bottom of e1
-
-            4) 
-            Contact page that shows email address and also has functioning "send message" feature that sendt the users text to a contact email address.
-
-            5) adding pages:
-                About us
-                Services
-                Contact
-            For these just make them look like a believable page on a software development site
-
+<!doctype html>
+    <html language=en>
         
-
-        this is useful
-        https://www.mendix.com/agile-guide/
-
-        gifs
-        https://giphy.com/devrock/  
-        https://giphy.com/gifs/tech-technology-mograph-pOEbLRT4SwD35IELiQ
-        https://giphy.com/butler
-        https://giphy.com/gifs/network-technologies-connectivity-ITRemFlr5tS39AzQUL
-
-    -->
     <head>
-        <link href="styles.css" rel="stylesheet">
-        <link rel="icon" href="./images/cube1.png">
+        <!-- Site -->
+        <!-- In-page -->
+        <title>NOVO MODO</title>
+        <meta name="description" content="XXX">
+        <meta name="keywords" content="XXX, XXX, XXX">
+        <meta name="author" content="XXX XXX">
+        <!-- Page settings -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Styles and favicon -->
+        <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="Styles/general.css">
+        <link rel="stylesheet" type="text/css" href="Styles/index.css">
+        <!-- Scripts -->
+        <script src="Scripts/jquery-3.6.0.min.js"></script>
+        <script src="Scripts/Cookies.js" defer></script>
+        <script src="Scripts/NavBurger.js" defer></script>
+        <script src="Scripts/TopScroll.js" defer></script>
     </head>
+        
     <body>
-        <div class="topNav">
-            <a href="https://joehome.org" class="logo">NOVO MODO</a>
+        
+        <div id="hidden-contents">
             
-            <a href="./contact.html" class="topNavButton">Contact</a>            
-            <a href="./technicalsupport.html" class="topNavButton">Technical Support</a>   
-            <a href="./aboutus.html" class="topNavButton">About Us</a>
-            <a href="./services.html" class="topNavButton">Services</a>                        
+    <!-- SCROLLTOP -->
+            <div id="topscroll"><div id="scrollarrow"></div></div>
+    <!-- /SCROLLTOP -->
+            
+    <!-- COOKIES -->
+            <div class="cookies">
+                <h1>Cookies</h1>
+                <p>
+                    We use cookies on our website. 
+                </p>
+                <p>
+                    Don't worry, they are not dangerous! 
+                </p>
+                <a href="https://en.wikipedia.org/wiki/HTTP_cookie" target="_blank">Learn more</a>
+                <button class="cookiebtn">
+                    Got it!
+                </button>
+            </div>
+    <!-- /COOKIES -->
+        
         </div>
-        <div class="topNavLine"></div>
+        
+        <nav>
+
+    <!-- NAVBAR -->
+            <div id="nav2">
+                <a href="index.html" id="nav-logo">
+                    <img src="Images/nm-logo.png" alt="Business logo" id="nav-logo-img">
+                </a>
+
+                <div class="navbar">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="nav-link">Main</a>
+                        </li>
+                        <li>
+                            <a href="services.html" class="nav-link">Services</a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html" class="nav-link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="support.html" class="nav-link">Support</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="burger-btn" onclick="navBurger()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="nav-help"></div>
+    <!-- /NAVBAR -->
+            
+        </nav>
+        
+        <header>    
+            
         <div id="banner">
             <div class="bannerbg">
                 <video autoplay muted loop id="bannervideo">
@@ -74,199 +99,242 @@
             </div>
             <div class="bannerTextArea">
                 <div class="bannerTextTitle">
-
-                    Software Solutions
+                    <h1>Software Solutions</h1>
                 </div>
                 <div class="bannerText">
                     Welcome to Novo Modo. We create modern software solutions for industry. 
-
                 </div>   
             </div> 
-            
         </div>
-        <div class="topNavLine"></div>
-        <div class="cardsSection lightGrey">
-            <!--
-            <div class="infoBox">
-                <div class="infoTitle">Modern solutions for the modern age</div>
-                <div class="infoText">Our subject matter experts bring the cutting edge of technology to your disposal.</div>
-                
-            </div>
-            -->
             
-            <br>
-            <div class="card2">
-                <div class="cardImage2" style="height: 130px;">
-                    <image style="height: 90px; margin-top: 20px;" src="./images/automation2.png"></image>                                        
-                </div>
-                <div class="cardTextArea">
-                    <div class="cardTitle">
-                        Automation
-                    </div>
-                    <div class="cardText">
-                        This is the card text. Lorem ipsum dolar sit amet.
-                    </div>                     
-                </div>
-            </div>
-            <div class="card2">
-                <div class="cardImage2" style="height: 130px;">
-                    <image style="height: 90px; margin-top: 20px;" src="./images/cloud.png"></image>
-                </div>
-                <div class="cardTextArea">
-                    <div class="cardTitle">
-                        Cloud Integration
-                    </div>
-                    <div class="cardText">
-                        This is the card text. Lorem ipsum dolar sit amet.
-                    </div>                     
-                </div>
-            </div>
-            <div class="card2">
-                <div class="cardImage2" style="height: 130px;">
-                    <image style="height: 90px; margin-top: 20px;" src="./images/training.png"></image>
-                </div>
-                <div class="cardTextArea">
-                    <div class="cardTitle">
-                        Virtual Training
-                    </div>
-                    <div class="cardText">
-                        This is the card text. Lorem ipsum dolar sit amet.
-                    </div>                     
-                </div>
-            </div>
-            <div class="card2">
-                <div class="cardImage2" style="height: 130px;">
-                    <image style="height: 90px; margin-top: 20px;" src="./images/vr.png"></image>
-                </div>
-                <div class="cardTextArea">
-                    <div class="cardTitle">
-                        VR Experiences
-                    </div>
-                    <div class="cardText">
-                        This is the card text. Lorem ipsum dolar sit amet.
-                    </div>                     
-                </div>
-            </div>
-            <div class="card2">
-                <div class="cardImage2" style="height: 130px;">
-                    <image style="height: 90px; margin-top: 20px;" src="./images/phone.png"></image>
-                </div>
-                <div class="cardTextArea">
-                    <div class="cardTitle">
-                        App Development
-                    </div>
-                    <div class="cardText">
-                        This is the card text. Lorem ipsum dolar sit amet.
-                    </div>                     
-                </div>
-            </div>
-            <div class="card2">
-                <div class="cardImage2" style="height: 130px;">
-                    <image style="height: 90px; margin-top: 20px;" src="./images/ai.png"></image>
-                </div>
-                <div class="cardTextArea">
-                    <div class="cardTitle">
-                        Artificial Intelligence
-                    </div>
-                    <div class="cardText">
-                        This is the card text. Lorem ipsum dolar sit amet.
-                    </div>                     
-                </div>
-            </div>
-        </div>                
-        <div class="infoSection">
-            <div class="infoSectionInner lightGrey">
-                <image class="infoImage" src="./images/firegiphy.gif"></image>
-                <div class="infoBoxPartial">
-                    <div class="infoTitle">Harness Technology</div>
-                    <div class="infoText">
-                        Whether it means upgrading to the cloud or creating automation solutions we have you covered. 
-                        Our goal is to increace productivity by orders of magnatude.
-                    </div>      
+        </header>
+        
+        <main>
+            
+            <div class="space"></div>
+                
+    <!-- CARDS -->
+            <div class="wrapper">
+                <div class="cards">
                     
-                    <a class="infoButton">View Examples</a>
+                    <a href="xxx" class="card">
+                        <img src="Images/automation2.png">
+                        <h3>Automation</h3>
+                        <p>Deliver end-to-end process automation with applications that bring people, data, and systems together.</p>
+                    </a>
+                    <a href="" class="card">
+                        <img src="Images/cloud.png">
+                        <h3>Cloud Integration</h3>
+                        <p>Build and deliver portable, scalable, and resilient applications without specialized expertise. Deploy anywhere in one click.</p>
+                    </a>
+                    <a href="" class="card">
+                        <img src="Images/training.png">
+                        <h3>Virtual Training</h3>
+                        <p>Lear faster than ever with virtual reality. By implementing it into our training excercises you can fully experience working with our products.</p>
+                    </a>
+                    <a href="" class="card">
+                        <img src="Images/vr.png">
+                        <h3>VR Experiences</h3>
+                        <p>Learn about our products via VR set. It will allow you to experience everything as you'd be doing it in real life.</p>
+                    </a>
+                    <a href="" class="card">
+                        <img src="Images/phone2.png">
+                        <h3>App Development</h3>
+                        <p>Empower co-creation across a diverse developer spectrum with a common visual language and dedicated IDEs to meet business needs quickly and efficiently.</p>
+                    </a>
+                    <a href="" class="card">
+                        <img src="Images/ai.png">
+                        <h3>Artificial Intelligence</h3>
+                        <p>Embrace smart applications; seamlessly connect AI and cognitive services to elevate your solution.</p>
+                    </a>
+
                 </div>
             </div>
-            
-        </div>
-        <div class="infoSection lightGrey">            
-            <div class="infoSectionInner">
-                <div class="infoBoxPartial">
-                    <div class="infoTitle">Colaboration</div>
-                    <div class="infoText">
-                        We can work with your existing team or we can be your team. 
-                        Our processes allow us to mesh seamlessly with existing organizations or to complete the whole project in house.                     
-                    </div>      
-                    <a class="infoButton">Meet the team</a>     
-                </div>
-                <image class="infoImage" src="./images/gitgiphytransparent.gif"></image>
-            </div>
-        </div>
-        <div class="infoSection">
-            <image class="infoImage" src="./images/greenCheck.gif"></image>
-            <div class="infoBoxPartial">
-                <div class="infoTitle">Results</div>
-                <div class="infoText">
-                    When you work with us your goals are our goals. 
-                    We will do whatever it takes to make your vision a reality and reach your milestones.
-                </div>      
+    <!-- /CARDS -->
+
+            <div class="space"></div>
                 
-                <a class="infoButton">View Examples</a>
+    <!-- CONTENT-PROMO -->            
+            <div class="content-promo">
+                <div class="wrapper content-promo-div">
+                    <div class="content-promo-text">
+                        <h2>Harness Technology</h2>
+                        <p>Whether it means upgrading to the cloud or creating automation solutions we have you covered. Our goal is to increace productivity by orders of magnatude.</p>
+                        <a href="index.html" class="content-promo-btn">View Examples</a>
+                    </div>
+                    <div class="content-promo-img">
+                        <img src="Images/firegiphy.gif">
+                    </div>
+                </div>
             </div>
             
-        </div>
-        <div class="infoSection lightGrey" style="background-image: url('./images/3711_computerscience-banner-final2.jpg'); background-repeat: no-repeat, no-repeat; background-size: 100% 100%; color: white;">
-            <div class="infoBox" style="background-color: rgba(92, 92, 92, 0.542); border-radius: 5px;">
-                <div style="height: 40px;"></div>
-                <div class="infoTitle" style="font-size: 45px; -webkit-text-stroke: 1px #1e328b">Contact us today</div>
-                <div class="infoText" style="font-size: 25px; font-weight: 600; ">Whatever your need and budget we will find a way. 
-                    Contact us today and one of our experts will reach out to you.
-                </div>      
-                <a class="infoButton">View a Demo</a>
-                <div class="space"></div>
-                <a class="infoButton">Contact Us</a>          
+            <div class="content-promo">
+                <div class="wrapper content-promo-div">
+                    <div class="content-promo-text">
+                        <h2>Colaboration</h2>
+                        <p>We can work with your existing team or we can be your team. Our processes allow us to mesh seamlessly with existing organizations or to complete the whole project in house.</p>
+                        <a href="index.html" class="content-promo-btn">Meet the team</a>
+                    </div>
+                    <div class="content-promo-img">
+                        <img src="Images/gitgiphytransparent.gif">
+                    </div>
+                </div>
             </div>
             
-        </div>
+            <div class="content-promo">
+                <div class="wrapper content-promo-div">
+                    <div class="content-promo-text">
+                        <h2>Results</h2>
+                        <p>When you work with us your goals are our goals. We will do whatever it takes to make your vision a reality and reach your milestones.
+                        </p>
+                        <a href="index.html" class="content-promo-btn">View Examples</a>
+                    </div>
+                    <div class="content-promo-img">
+                        <img src="Images/greenCheck.gif">
+                    </div>
+                </div>
+            </div>
+    <!-- /CONTENT-PROMO -->
+            
+            <div class="space"></div>
+            
+    <!-- SIMPLE-TEXT2 -->
+            <div class="wrapper">
+                <div class="simple-text2">
+                    <h2>Contact us today</h2>
+                    <p>Whatever your need and budget we will find a way. Contact us today and one of our experts will reach out to you.</p>
+                    <div class="simple-text-buttons">
+                        <a href="xxx" class="simple-text-btn"><p>View a Demo</p></a>
+                        <a href="xxx" class="simple-text-btn"><p>Contact Us</p></a>
+                    </div>
+                </div>
+            </div>
+    <!-- /SIMPLE-TEXT2 -->
+            
+            <div class="space"></div>
+
+        </main>
+
         
-        <!--
-        <img src="C:\Users\broski\Downloads\computerscience.jpg" alt="Python machine learning" style="width: 100%;">
-        <img src="C:\Users\broski\Downloads\python-data-science.jpg" alt="Python machine learning" style="width: 100%;">
-        -->
-        
-        
-        <div class="topNavLine"></div>
-        <div class="bottomSection">
-            <div class="bottomSectionTextColumn">            
-                <div style="font-size: 20px; font-weight: bold;" class="">NOVO MODO</div>   
-                <br>     
-                <span style="font-size: 14px;">New age software solutions for industry</span>
+    <!-- FOOTER -->
+        <footer>
+            
+            <div class="wrapper">
+            <div class="wrapper2">
+            
+                <div id="brand">
+
+                    <div id="brand-logo">
+                        <img src="Images/nm-logo.png" alt="Business logo">
+                    </div>
+
+                    <h3>Join us!</h3>
+
+                    <div id="socials">
+                        <a href="xxx" class="social-btn">
+                            <img src="Images/yticon.png" alt="YT icon">
+                        </a>
+                        <a href="xxx" class="social-btn">
+                            <img src="Images/fbicon.png" alt="FB icon">
+                        </a> 
+                        <a href="xxx" class="social-btn">
+                            <img src="Images/twicon.png" alt="Twitter icon">
+                        </a> 
+                        <a href="xxx" class="social-btn">
+                            <img src="Images/igicon.png" alt="IG icon">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="footer-nav">
+                    <div class="footer-nav2">
+                        <h3>Explore</h3>
+                        <div class="footer-nav-div">
+                            <a href="index.html" class="footer-link">Main</a>
+                        </div>
+                        <div class="footer-nav-div">
+                            <a href="services.html" class="footer-link">Services</a>
+                        </div>
+                        <div class="footer-nav-div">
+                            <a href="aboutus.html" class="footer-link">About Us</a>
+                        </div>
+                        <div class="footer-nav-div">
+                            <a href="support.html" class="footer-link">Support</a>
+                        </div>
+                        <div class="footer-nav-div">
+                            <a href="contact.html" class="footer-link">Contact</a>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="footer-nav">
+                    <div class="footer-nav2">
+                        <h3>Services</h3>
+                        <div class="footer-nav-div">
+                            <a href="xxx" class="footer-link">Automation</a>
+                        </div>
+                        <div class="footer-nav-div">
+                            <a href="xxx" class="footer-link">Cloud Integration</a>
+                        </div>
+                        <div class="footer-nav-div">
+                            <a href="xxx" class="footer-link">Virtual training</a>
+                        </div>
+                        <div class="footer-nav-div">
+                            <a href="xxx" class="footer-link">VR Experiences</a>
+                        </div>
+                        <div class="footer-nav-div">
+                            <a href="xxx" class="footer-link">App Developments</a>
+                        </div>
+                        <div class="footer-nav-div">
+                            <a href="xxx" class="footer-link">Artificial Intelligence</a>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="footer-nav">
+                    <div class="footer-nav2">
+                        <h3>For Partners</h3>
+                        <div class="footer-nav-div">
+                            <a href="xxx" class="footer-link">Login</a>
+                        </div>
+                        <div class="footer-nav-div">
+                            <a href="xxx" class="footer-link">Company news</a>
+                        </div>
+                        <div class="footer-nav-div">
+                            <a href="xxx" class="footer-link">Investor Relations</a>
+                        </div>
+                        <div class="footer-nav-div">
+                            <a href="xxx" class="footer-link">Careers</a>
+                        </div>
+                    </div>
+                </div> 
+                
             </div>
-            <div class="bottomSectionTextColumn">
-                <div class="bottomTitle">Services</div>
-                Automation<br>
-                Cloud Integration<br>
-                Virtual training<br>
-                VR Experiences<br>
-                App Development<br>
-                Artificial Intelligence
             </div>
-            <div class="bottomSectionTextColumn">
-                <div class="bottomTitle">Pages</div>
-                Home<br>
-                About Us       <br>         
-                Technical Support<br>
-                Contact<br>
+            
+            <div id="credits">
+                <a href="https://www.fiverr.com/new_horizon_web">
+                    © Website created by New Horizon 2021
+                </a>
             </div>
-            <div class="bottomSectionTextColumn">
-                <div class="bottomTitle">For Partners</div>
-                Login<br>
-                Company news  <br>         
-                Investor Relations<br>
-                Careers<br>
-            </div>
-        </div>
-        <div class="topNavLine"></div>
+            
+        </footer>
+    <!-- /FOOTER -->
         
     </body>
-</html>
+        
+    </html>
+        
+        
+        
+        
+        
+        
+        
+        
+     
+        
+        
+        
+        

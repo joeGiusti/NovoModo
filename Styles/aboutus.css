@@ -1,0 +1,296 @@
+.navbar li:nth-child(3) a{
+    color:var(--color1);
+}
+
+    /* Text-wrap1 */
+
+.text-wrap1{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+.text-wrap1 h1{
+    width:100%;
+    text-align:center;
+    margin-bottom:20px;
+    color:var(--color1);
+}
+
+.text-wrap1 img{
+    float:left;
+    min-width:300px;
+    width:30%;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+
+.text-wrap1 p{
+    margin-bottom:10px;
+}
+
+.text-wrap1 p:nth-last-child(1){
+    margin-bottom:0;
+}
+
+        /* Text-wrap1 - media */
+
+@media screen and (max-width:540px){
+    
+    .text-wrap1 .text-wrap-content{
+        display:flex;
+        flex-direction:column;
+    }
+    
+    .text-wrap1 img{
+        float:none;
+        min-width:0;
+        width:100%;
+    }
+
+}
+
+    /* Quote */
+
+.quote{
+    width:100%;
+    margin-top:-50px;
+    position:relative;
+}
+
+.quote h1{
+    font-size:225px;
+    color:var(--color1);
+    position:absolute;
+    
+}
+
+.quote-text{
+    display:flex;
+    flex-direction:column;
+    padding:0 100px;
+    gap:15px;
+}
+
+.quote p{
+    font-size:26px;
+    width:100%;
+}
+
+.quote p:nth-child(1){
+    font-size:40px;
+    width:100%;
+    text-align:justify;
+    padding-top:100px;
+}
+
+        /* Quote - media */
+
+@media screen and (max-width:1366px){
+    
+    .quote{
+        width:100%;
+        margin-top:-15px;
+        position:relative;
+    }
+    
+    .quote-text{
+        padding:0 8vw;
+    }
+    
+    .quote h1{
+        font-size:16.5vw;;
+    }
+    
+    .quote p{
+        font-size:1.9vw;
+        width:100%;
+    }
+    
+    .quote p:nth-child(1){
+        font-size:2.9vw;
+        padding-top:7vw;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    
+    .quote-text{
+        padding:0 9vw;
+    }
+    
+    .quote h1{
+        font-size:18vw;;
+    }
+    
+    .quote p{
+        font-size:2.3vw;
+        width:100%;
+    }
+    
+    .quote p:nth-child(1){
+        font-size:3.2vw;
+    }
+    
+}
+
+@media screen and (max-width:540px){
+    
+    .quote-text{
+        padding:0 35px;
+    }
+    
+    .quote h1{
+        font-size:75px;
+    }
+    
+    .quote p{
+        font-size:16px;
+        width:100%;
+    }
+    
+    .quote p:nth-child(1){
+        font-size:20px;
+    }
+    
+}
+
+    /* Video */
+
+.video{
+    width:100%;
+}
+
+.video-inner{
+    width:100%;
+    cursor:pointer;
+    transition:0.2s;
+    border-radius:12px 12px 0 0;
+}
+
+    /* Content-show1 */
+
+.content-show1{
+    width:100%;
+    display:flex;
+    cursor:pointer;
+}
+
+.content-show1 .show-element{
+    width:calc(100% / 3);
+    position:relative;
+}
+
+.content-show1 .show-text{
+    width:calc(100% - 80px);
+    padding:60px 40px;
+    background-color:var(--color2);
+    opacity:0.85;
+    transform:scale(1);
+    transition:0.5s;
+}
+
+.content-show1 .show-element:nth-child(2) .show-text{
+    opacity:0.75;
+}
+
+.content-show1 .show-element:hover .show-text{
+    opacity:0;
+    transform:scale(0);
+}
+
+.content-show1 .show-text h4{
+    color:white;
+    margin-bottom:20px;
+}
+
+.content-show1 .show-text p{
+    color:white;
+}
+
+.content-show1 .show-see-more{
+    margin-top:25px;
+    transition:0.15s;
+    display:none;
+}
+
+.content-show1 .show-element:hover .show-see-more{
+    text-decoration:underline;
+    color:var(--color1);
+}
+
+.content-show1 .show-text2{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:var(--color1);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    z-index:5;
+    transition:0.5s;
+    transform:scale(0);
+}
+
+.content-show1 .show-text2 h4{
+    color:white;
+    text-shadow:0 0 3px rgb(0,0,0,0.5);
+}
+
+.content-show1 .show-element:hover .show-text2{
+    opacity:1;
+    transform:scale(1);
+}
+
+        /* Content-show - media */
+
+@media screen and (max-width:768px){
+    
+    .content-show1{
+        width:100%;
+        flex-direction:column;
+    }
+    
+    .content-show1 .show-element{
+        width:100%;
+    }
+    
+    .content-show1 .show-see-more{
+        display:block;
+    }
+    
+    .content-show1 .show-element:hover .show-text{
+        opacity:0.65;
+        transform:scale(1);
+    }
+    
+    .content-show1 .show-element:nth-child(2) .show-text{
+        opacity:0.55;
+    }
+    
+    .content-show1 .show-text2{
+        display:none;
+    }
+    
+}
+
+@media screen and (max-width:375px){
+    
+    .content-show1 .show-text{
+        width:calc(100% - 60px);
+        padding:40px 30px;
+    }
+    
+}
+
+
+
+
+
+
+
+

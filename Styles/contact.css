@@ -1,0 +1,234 @@
+.navbar li:nth-child(5) a{
+    color:var(--color1);
+}
+
+        /*Contact*/
+
+#contactheader{
+    display:flex;
+    justify-content:center;
+}
+
+#contact{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+
+        /*CONTACT1*/
+
+#contact1{
+    width:45%;
+}
+
+#contact1 .maildiv{
+    padding-bottom:30px;
+    display:flex;
+    justify-content:center;
+}
+
+#contact1 ::-webkit-input-placeholder{
+    color:#181818;
+    opacity:1;
+    transition:0.15s;
+}
+#contact1 ::-ms-input-placeholder{
+    color:#181818;
+    opacity:1;
+    transition:0.15s;
+}
+#contact1 ::-moz-input-placeholder{
+    color:#181818;
+    opacity:1;
+    transition:0.15s;
+}
+
+#contact1 #mailplace{
+    height:20px;
+    width:94%;
+    padding:10px;
+    font-size:16px;
+    border:none;
+    transition:0.3s;
+    background-color:transparent;
+    border-bottom:solid 2px #181818;
+}
+
+.dark-mode #contact1 #mailplace{
+    color:white;
+    border-bottom:solid 2px #DEDEDE;
+}
+
+#contact1 #mailplace:focus{
+    width:100%;
+    border-bottom:solid 2px var(--color1);
+}
+
+#contact1 #mailtext{
+    width:94%;
+    height:400px;
+    padding:10px;
+    resize:none;
+    font-size:16px;
+    border:none;
+    transition:0.3s;
+    background-color:transparent;
+    border-bottom:solid 2px #181818;
+}
+
+.dark-mode #contact1 #mailtext{
+    color:white;
+    border-bottom:solid 2px #DEDEDE;
+}
+
+#contact1 #mailtext:focus{
+    border-bottom:solid 2px var(--color1);
+}
+
+#contact1 #sendbtn{
+    width:200px;
+    height:40px;
+    font-size:18px;
+    font-weight:600;
+    border:solid 2px var(--color2);
+    color:var(--color2);
+    cursor:pointer;
+    transition:0.15s;
+    border-radius:3px;
+}
+
+#contact1 #sendbtn:hover{
+    background-color:var(--color1);
+    color:white;
+}
+
+#contact1 .sbtndiv{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+        /*CONTACT2*/
+
+#contact2{
+    width:45%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+#contactimg img{
+    width:100%;
+    transition:0.15s;
+}
+
+#contactinfo{
+    width:100%;
+    border:solid 3px var(--color2);
+    transition:0.05s;
+    border-radius:12px;
+}
+
+.dark-mode #contactinfo{
+    border:solid 3px white;
+}
+
+#contactinfo2{
+    height:calc(100% - 100px);
+    padding:50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+#contactinfo2 h3{
+    font-size:25px;
+    padding-bottom:10px;
+}
+
+#contactinfo2 p{
+    padding:10px 0;
+}
+
+        /*Contact - media*/
+
+@media screen and (max-width:1024px){
+    
+    #contact{
+        flex-direction:column;
+    }
+    
+    #contact1{
+        width:100%;
+        padding-bottom:150px;
+    }
+    
+    #contact2{
+        width:100%;
+    }
+    
+    #contactimg{
+        padding-bottom:50px;
+    }
+    
+}
+
+@media screen and (max-width:775px){
+    
+    #contactheader{
+        font-size:20px;
+    }
+    
+    #contact1 #mailplace{
+        width:90%;
+    }
+    
+    #contact1 #mailtext{
+        height:325px;
+        width:90%;
+    }
+    
+    #contactinfo2{
+        height:calc(100% - 100px);
+        padding:50px;
+    }
+    
+    #contactinfo2 h3{
+        font-size:22px;
+    }
+    
+    #contactinfo2 p{
+        font-size:16px;
+    }
+
+}
+
+@media screen and (max-width:400px){
+    
+    #contactinfo2 p{
+        font-size:14px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

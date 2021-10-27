@@ -1,0 +1,273 @@
+/* 
+    Website created by New Horizon
+    Do not copy or distribute
+    https://www.fiverr.com/new_horizon_web
+*/
+
+    /* Media breakpoints */
+    /* Width: 1366, 1024, 768, 540, 375, 320  */ 
+
+
+.navbar li:nth-child(1) a{
+    color:var(--color1);
+}
+
+    /* Banner */
+
+.banner{
+    height: 600px;
+    width: 100%;
+    background-color: gray;
+}
+.bannerTextArea{
+    position: absolute;
+    top: 180px;
+    left: 80px;
+    /*background-color: thistle;*/
+    width: 360px;
+    color: white;
+    background-color:rgb(0,0,40,0.8);
+    padding:100px 50px;
+}
+.bannerTextTitle h1{
+    font-size: 40px;
+    font-weight: bold;
+    color:white;
+    margin-bottom:15px;
+}
+.bannerText{
+    font-size: 20px;
+}
+#bannervideo{
+    object-fit:cover;
+    width:100vw;
+    height:100%;
+    position:relative;
+    top:0;
+    left:0;
+}
+.bannerbg{
+    width:100%;
+    height:600px;;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:-1;
+}
+
+@media only screen and (max-width:768px){
+    .bannerTextArea{
+        position:static;
+        width:calc(100% - 97px);
+        background-color:var(--color2);
+        padding:60px 50px;
+        overflow:none;
+    }
+    
+    #bannerTextAreaHelp{
+        display:block;
+        min-width:100px;
+        height:240px;
+    }
+}
+
+    /* Cards */
+
+.cards{
+    width:100%;
+    min-height:10vh;
+    display:flex;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.card{
+    flex-basis:calc((100% / 3) - (80px / 3));
+    border-radius:12px;
+    box-shadow:0 0 3px 3px var(--bg2);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    transition:0.25s;
+}
+
+.card:hover{
+    box-shadow:0 0 3px 3px var(--color1);
+}
+
+.card img{
+    width:100px;
+    margin-top:50px;
+}
+
+.card h3{
+    width:90%;
+    margin-top:50px;
+    margin-bottom:15px;
+    font-weight:800;
+    text-align:center;
+}
+
+.card p{
+    width:90%;
+    padding-bottom:50px;
+}
+
+        /* Cards - media */
+
+@media screen and (max-width:1024px){
+    
+    .card{
+        flex-basis:calc(50% - (80px / 4));
+    }
+    
+}
+
+@media screen and (max-width:540px){
+    
+    .card{
+        flex-basis:100%;
+    }
+    
+}
+
+    /* Content-promo */
+
+.content-promo{
+    background-color:var(--bg1);
+    min-height:20vh;
+    width:100%;
+}
+
+.content-promo:nth-child(2n){
+    background-color:var(--bg2);
+}
+
+.content-promo-div{
+    display:flex;
+    align-items:center;
+    gap:80px;
+    padding-top:75px;
+    padding-bottom:75px;
+}
+
+.content-promo:nth-child(2n) .content-promo-div{
+    flex-direction:row-reverse;
+}
+
+.content-promo-text{
+    flex-basis:calc(70% - 40px);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:100%;
+    gap:20px;
+}
+
+.content-promo-btn{
+    width:180px;
+    height:50px;
+    background-color:var(--color1);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    transition:0.25s;
+    text-shadow:0 0 3px rgb(0,0,0,0.5);
+}
+
+.content-promo-btn:hover{
+    background-color:var(--color2);
+}
+
+.content-promo-img{
+    flex-basis:calc(30% - 40px);
+}
+
+.content-promo-img img{
+    width:100%;
+}
+
+        /* Content-promo - media */
+
+@media screen and (max-width:768px){
+    
+    .content-promo-div{
+        justify-content:center;
+        flex-direction:column;
+        padding-top:50px;
+        padding-bottom:50px;
+    } 
+    
+    .content-promo:nth-child(2n) .content-promo-div{
+        flex-direction:column;
+    }
+    
+    .content-promo-img{
+        width:50%;
+    }
+    
+}
+
+    /* Simple-text2 */
+
+.simple-text2{
+    display:flex;
+    flex-direction:column;
+    width:calc(100% - 80px);
+    padding:40px;
+    background-color:var(--bg2);
+    gap:15px;
+}
+
+.simple-text2 h2{
+    color:var(--color1);
+    text-align:center;
+}
+
+.simple-text2 p{
+    text-align:center;
+}
+
+.simple-text2 .simple-text-buttons{
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.simple-text2 .simple-text-btn p{
+    width:180px;
+    height:50px;
+    background-color:var(--color1);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    transition:0.25s;
+}
+
+.simple-text2 .simple-text-btn p:hover{
+    background-color:var(--color2);
+}
+
+@media screen and (max-width:540px){
+    
+    .simple-text2 .simple-text-buttons{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:15px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
